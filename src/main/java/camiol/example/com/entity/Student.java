@@ -18,7 +18,7 @@ public class Student {
 	private long id;
 	@Column(name="Name")
 	private String name;
-	@Column(name="MathScore")
+	@Column(name="Math_Score")
 	private int mathScore;
 	
 	public long getId() {
