@@ -1,5 +1,9 @@
 # 建立一個SpringBoot + Spring + JPA 的Web專案
+
 [![hackmd-github-sync-badge](https://hackmd.io/i3T9xRyQR0OOVczCQmtkZQ/badge)](https://hackmd.io/i3T9xRyQR0OOVczCQmtkZQ)
+
+
+- [Github位置](https://github.com/camioljoyce/springbootDemo)
 
 建立一個Spring Boot專案，在Eclipse功能選單選擇 
 File -> New -> Spring Starter Project
@@ -19,7 +23,6 @@ File -> New -> Spring Starter Project
 
 在src/main/resources下的application.properties設定檔，加入MySQL的datasource連線及JPA等設定
 
-![](https://i.imgur.com/gcEvGCA.jpg)
 ```\
 # DataSource 配置
 spring.datasource.url=jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=yes&characterEncoding=UTF-8
@@ -30,6 +33,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 # hibernate 5.3.1後新增了MYSQL8Dialect
 spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
 ```
 
 加入下列這些class和interface
@@ -263,7 +267,7 @@ run as Java Application
 
 以上就是基本的SpringBoot + Spring + JPA + MySQL的專案設定
 
-###### tags: Spring boot
+###### tags: `Spring boot`
 
 
 
